@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "app.terraform.io/mouli-training/vpc/aws"
+    source = "terraform-aws-modules/vpc/aws"
     version = "2.33.0"
 
     name = "my-vpc"
@@ -14,7 +14,7 @@ module "vpc" {
     enable_vpn_gateway = true
     
     tags = {
-        terraform = "true"
+        Terraform = "true"
         Environment = "dev"
     }
     }
