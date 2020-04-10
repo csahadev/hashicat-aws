@@ -2,7 +2,7 @@ module "vpc" {
     source = "app.terraform.io/mouli-training/vpc/aws"
     version = "2.33.0"
 
-    name = "my-cpc"
+    name = "my-vpc"
     cidr = "10.0.0.0/16"
 
     az5            =  ["us-east-1a", "us-east-1b", "us-east-1c"]
